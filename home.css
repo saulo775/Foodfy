@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    max-width: 940px;
+    height: 74px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+nav img {
+    width: 90px;
+    height: 27px;
+    margin-right: 126px;
+}
+
+nav div a {
+    font-size: 16px;
+    color: #111111;
+}
+nav div a + a {
+    margin-left: 30px;
+}
+
+.align_page {
+    display: flex;
+    width: 940px;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.align_page .banner {
+    flex: 1;
+    display: flex;
+    max-width: 940px;
+    min-height: 366px;
+    box-sizing: border-box;
+    background: #FBDFDB;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0 100px 0 60px;
+    justify-content: space-between;
+}
+
+.banner .presentation {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 316px;
+}
+
+.banner .presentation h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111111;
+}
+.banner .presentation p {
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.banner img {
+    width: 216px;
+    height: 300px;
+    margin-top: 66px;
+}
+
+.align_page .title_most_accessed h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    margin: 50px 0 20px;
+}
+
+.align_page .most_accessed {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.most_accessed .item {
+    width: 300px;
+}
+
+.most_accessed .item img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.most_accessed .item h3 {
+    font-size: 18px;
+    color: #111111;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.most_accessed .item h4 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 62px;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+footer p {
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    margin: auto 0;
+    font-size: 14px;
+    color: #999999;
+}
