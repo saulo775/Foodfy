@@ -98,25 +98,25 @@ nav div a + a {
     gap: 10px;
 }
 
-.most_accessed .item {
+.most_accessed .recipe {
     width: 300px;
 }
 
-.most_accessed .item img {
+.most_accessed .recipe img {
     width: 300px;
     height: 140px;
     border-radius: 15px;
     margin-bottom: 15px;
 }
 
-.most_accessed .item h3 {
+.most_accessed .recipe h3 {
     font-size: 18px;
     color: #111111;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.most_accessed .item h4 {
+.most_accessed .recipe h4 {
     font-weight: 500;
     font-size: 14px;
     color: #777777;
