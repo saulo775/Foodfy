@@ -5,7 +5,7 @@ const server = express();
 
 server.use(express.static('public'))
 
-server.set("view engine", "html");
+server.set("view engine", "njk");
 
 nunjucks.configure("views", {
     express: server
@@ -14,6 +14,10 @@ nunjucks.configure("views", {
 
 
 server.get("/", function (req, res) {
+    return res.redirect("home")
+})
+
+server.get("/home", function (req, res) {
     return res.render("home")
 })
 
@@ -26,6 +30,6 @@ server.get("/about", function (req, res) {
 
 
 
-server.listen(5000, function () {
+server.listen(5000, function() {
     console.log("Server is running!!!");
 });
