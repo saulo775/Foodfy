@@ -19,35 +19,12 @@
     </div>
 
     <section class="most_accessed">
+        {% for recipe in recipes %}
         <div class="recipe">
-            <img src="/assets/burger.png" alt="">
-            <h3>Triplo burguer bacon</h3>
-            <h4>Por Jorge Relato</h4>
+            <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
+            <h3>{{recipe.title}}</h3>
+            <h4>{{recipe.author}}</h4>
         </div>
-        <div class="recipe">
-            <img src="/assets/pizza.png" alt="">
-            <h3>Pizza 4 estações</h3>
-            <h4>Por Fabiana Melo</h4>
-        </div>
-        <div class="recipe">
-            <img src="/assets/espaguete.png" alt="">
-            <h3>Espaguete ao alho</h3>
-            <h4>Por Julia Kinoto</h4>
-        </div>
-        <div class="recipe">
-            <img src="/assets/lasanha.png" alt="">
-            <h3>Lasanha mac n' cheese</h3>
-            <h4>Por Juliano Vieira</h4>
-        </div>
-        <div class="recipe">
-            <img src="/assets/doce.png" alt="">
-            <h3>Docinhos pão-do-céu</h3>
-            <h4>Por Ricardo Gouvea</h4>
-        </div>
-        <div class="recipe">
-            <img src="/assets/asinhas.png" alt="">
-            <h3>Asinhas de frango ao barbecue</h3>
-            <h4>Por Vania Steroski</h4>
-        </div>
+        {% endfor %}
     </section>
 {% endblock content %}

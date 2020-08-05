@@ -13,12 +13,15 @@ a {
 body {
     font-family: "roboto", sans-serif;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 nav {
+    flex: 1;
     display: flex;
-    max-width: 940px;
-    height: 74px;
+    width: 940px;
+    min-height: 74px;
+    max-height: 74px;
     margin: 0 auto;
     align-items: center;
 }
@@ -35,6 +38,12 @@ nav div a {
 }
 nav div a + a {
     margin-left: 30px;
+}
+
+.container_flex {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .align_page {
@@ -123,12 +132,22 @@ nav div a + a {
     margin-bottom: 30px;
 }
 
+
+.rodape {
+    position: relative;
+
+}
+
 footer {
+    flex: 1;
     display: flex;
     width: 100%;
-    height: 62px;
+    min-height: 62px;
+    max-height: 62px;
+    margin-top: auto;
     background-color: #EEEEEE;
     text-align: center;
+
 }
 
 footer p {
