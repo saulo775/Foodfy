@@ -9,22 +9,17 @@
     <section class="most_accessed recipes">
 
         {% for recipe in recipes %}
-        <div class="recipe">
-            <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
-            <h3>{{recipe.title}}</h3>
-            <h4>{{recipe.author}}</h4>
-        </div>
-
+            <div id="{{recipe.id}}" class="recipe">
+                <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
+                <h3>{{recipe.title}}</h3>
+                <h4>{{recipe.author}}</h4>
+            </div>
         {% endfor %}
-        {% for recipe in recipes %}
-        <div class="recipe">
-            <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
-            <h3>{{recipe.title}}</h3>
-            <h4>{{recipe.author}}</h4>
-        </div>
-
-        {% endfor %}
-
-
     </section>
+
+
+    <script src="./scripts/scripts.js"></script>
+
+
+
 {% endblock content %}

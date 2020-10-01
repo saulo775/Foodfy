@@ -109,6 +109,9 @@ nav div a + a {
 
 .most_accessed .recipe {
     width: 300px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
 }
 
 .most_accessed .recipe img {
@@ -129,7 +132,6 @@ nav div a + a {
     font-weight: 500;
     font-size: 14px;
     color: #777777;
-    margin-bottom: 30px;
 }
 
 
