@@ -1,6 +1,7 @@
 
 .details_recipe {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .details_recipe img{
@@ -46,6 +47,31 @@
     font-size: 18px;
     color: #444444;
     line-height: 28px;
+}
+
+.button_content {
+    display: flex;
+    margin-top: 25px;
+    font-weight: bold;
+    height: 45px;
+
+}
+
+.button_content h1 {
+    font-size: 24px;
+}
+.button_content a {
+    vertical-align: center;
+    margin-left: 8px;
+    font-size: 12px;
+    color: #999999;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0px;
 }
 
 .details ul li {
