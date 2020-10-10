@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+body header {
+    background-color: #111111;
+    flex: 1;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.align_nav {
+    flex: 1;
+    width: 940px;
+    height: 80px;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content:left center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.align_page {
+    flex: 1;
+    width: 940px;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    box-sizing: border-box;
+}
+
+.page_title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.page_title button {
+    background: #6558C3;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: solid 2px #6558c3;
+    text-align: center;
+    font-weight: bold;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+.page_title button:hover {
+    background-color: white;
+    border: solid 2px #6558c3;
+    color: #6558C3;
+    transition: 400ms;
+}
+
+.inputs h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.inputs input {
+    width: 100%;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 0 16px ;
+    font-size: 18px;
+}
+.inputs button {
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    color: #6558C3;
+    text-align: right;
+    background: none;
+    margin-top: 15px;
+}
+
+.inputs li {
+    margin-bottom: 30px;
+}
+
+.inputs textarea {
+    width: 100%;
+    height: 257px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 8px 16px ;
+    font-size: 18px;
+    resize: vertical;
+}

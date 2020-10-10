@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/admin.css">
+    <title>Admin Foodfy</title>
+</head>
+<body>
+    <header>
+        <div class="align_nav">
+            <nav>
+                <h1>Foodfy</h1>
+            </nav>
+        </div>
+    </header>
+
+    <section class="align_page">
+        <div class="page_title">
+            <h2>Criando receita</h2>
+            <button type="submit">Salvar receita</button>
+        </div>
+
+        <form action="/admin/recipes">
+            <ul class="inputs">
+                <li>
+                    <h3>Imagem da receita</h3>
+                    <input type="url" name="img_url" placeholder="https://">
+                </li>
+                <li>
+                    <h3>Ingredients</h3>
+                    <input type="text" name="ingredients">
+                    <button type="">Adicionar novo ingrediente</button>
+                </li>
+
+                <li>
+                    <h3>Modo de preparo</h3>
+                    <input type="text" name="prepare">
+                    <button type="">Adicionar novo passo</button>
+                </li>
+
+                <li>
+                    <h3>Informaçoes adicionais</h3>
+                    <textarea name="infos"  cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>
