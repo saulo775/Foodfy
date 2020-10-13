@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/admin.css">
+    <title>Admin Foodfy</title>
+</head>
+<body>
+    <header>
+        <div class="align_nav">
+            <nav>
+                <h1>Foodfy</h1>
+            </nav>
+        </div>
+    </header>
+
+    <section class="align_page">
+        {% block content %}
+            {% block title %}
+            {% endblock title %}
+
+        {% endblock content %}
+    </section>
+</body>
+</html>

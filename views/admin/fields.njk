@@ -1,0 +1,48 @@
+<div class="itens">
+        <h3>Imagem da receita</h3>
+        <input type="url" name="img_url" placeholder="https://" value="{{recipes.img_url}}">
+    </div>
+
+    <div class="itens">
+        <h3>Prato</h3>
+        <input type="text" name="name" value="{{recipes.title}}" placeholder="Nome do prato" >
+    </div>
+
+    <div class="itens">
+        <h3>Autor da receita</h3>
+        <input type="text" name="author" value="{{recipes.author}}" placeholder="autor da receita">
+    </div>
+
+    <div id="ingredients" class="itens">
+        <h3>Ingredientes</h3>
+        <div class="ingredient">
+            <input
+                type="text"
+                name="ingredients[]"
+                {% for recipe in recipes.ingredients %}
+                    value="{{recipe}}"
+                {% endfor %}
+                placeholder="ex.: sal">
+        </div>
+    </div>
+    <button class="add_ingredient" type="button">Adicionar novo ingrediente</button>
+
+    <div id="prepare" class="itens">
+        <h3>Modo de preparo</h3>
+        <div class="preparo">
+            <input
+                type="text"
+                name="preparation[]"
+                {% for recipe in recipes.preparation%}
+                    value="{{recipe}}"
+                {% endfor %}>
+        </div>
+    </div class="itens">
+    <button class="add_prepare" type="button">Adicionar novo passo</button>
+
+    <div class="itens">
+        <h3>Informaçoes adicionais</h3>
+        <textarea name="information" style="font-family: 'roboto'">{{recipes.information}}</textarea>
+    </div>
+    <script src="/scripts/utils.js"></script>
+    <button type="submit">ds</button>

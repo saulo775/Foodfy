@@ -1,5 +1,7 @@
 //const indexOf = require("../../data");
 
+
+
 const recipes = document.querySelectorAll(".recipe")
 const button_hide = document.querySelectorAll(".button_hide")
 const content = document.querySelectorAll(".content")

@@ -1,51 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'admin/layout.njk' %}
 
-    <link rel="stylesheet" href="/styles/admin.css">
-    <title>Admin Foodfy</title>
-</head>
-<body>
-    <header>
-        <div class="align_nav">
-            <nav>
-                <h1>Foodfy</h1>
-            </nav>
+{% block content %}
+
+{% block title %}
+    <div class="page_title">
+        <h2>Criando receita</h2>
+        <button type="submit">Salvar receita</button>
+
+    </div>
+{% endblock title %}
+
+<form class="form_create" method="POST" action="/admin/recipes">
+
+    <div class="itens">
+        <h3>Imagem da receita</h3>
+        <input type="url" name="img_url" placeholder="https://">
+    </div>
+
+    <div class="itens">
+        <h3>Prato</h3>
+        <input type="text" name="name" placeholder="Nome do prato">
+    </div>
+
+    <div class="itens">
+        <h3>Autor da receita</h3>
+        <input type="text" name="author" placeholder="autor da receita">
+    </div>
+
+    <div id="ingredients" class="itens">
+        <h3>Ingredientes</h3>
+        <div class="ingredient">
+            <input type="text" name="ingredients[]" value="" placeholder="ex.: sal">
         </div>
-    </header>
+    </div>
+    <button class="add_ingredient" type="button">Adicionar novo ingrediente</button>
 
-    <section class="align_page">
-        <div class="page_title">
-            <h2>Criando receita</h2>
-            <button type="submit">Salvar receita</button>
+    <div id="prepare" class="itens">
+        <h3>Modo de preparo</h3>
+        <div class="preparo">
+            <input type="text" name="prepare[]">
         </div>
+    </div class="itens">
+    <button class="add_prepare" type="button">Adicionar novo passo</button>
 
-        <form action="/admin/recipes">
-            <ul class="inputs">
-                <li>
-                    <h3>Imagem da receita</h3>
-                    <input type="url" name="img_url" placeholder="https://">
-                </li>
-                <li>
-                    <h3>Ingredients</h3>
-                    <input type="text" name="ingredients">
-                    <button type="">Adicionar novo ingrediente</button>
-                </li>
+    <div class="itens">
+        <h3>Informaçoes adicionais</h3>
+        <textarea name="infos"  cols="30" rows="10"></textarea>
+    </div>
+    <script src="/scripts/utils.js"></script>
+    <button type="submit">ds</button>
 
-                <li>
-                    <h3>Modo de preparo</h3>
-                    <input type="text" name="prepare">
-                    <button type="">Adicionar novo passo</button>
-                </li>
+</form>
 
-                <li>
-                    <h3>Informaçoes adicionais</h3>
-                    <textarea name="infos"  cols="30" rows="10"></textarea>
-                </li>
-            </ul>
-        </form>
-    </section>
-</body>
-</html>
+{% endblock content %}

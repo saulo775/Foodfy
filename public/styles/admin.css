@@ -14,13 +14,12 @@ html {
 a {
     text-decoration: none;
 }
+ul {
+    list-style: none;
+}
 
 button {
     outline: none;
-}
-
-ul {
-    list-style: none;
 }
 
 form {
@@ -38,16 +37,16 @@ body {
 
 body header {
     background-color: #111111;
-    flex: 1;
     width: 100%;
     align-items: center;
     box-sizing: border-box;
+    height: 80px;
 }
 
 .align_nav {
     flex: 1;
     width: 940px;
-    height: 80px;
+    height: 80px !important;
     color: white;
     margin: auto;
     display: flex;
@@ -69,7 +68,6 @@ body header {
 .page_title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
 }
 
 .page_title button {
@@ -91,14 +89,42 @@ body header {
     transition: 400ms;
 }
 
-.inputs h3 {
+#button_delete {
+    background: #f33131;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: solid 2px #f33131;
+    text-align: center;
+    font-weight: bold;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+#button_delete:hover {
+    background-color: white;
+    border: solid 2px  #f33131;
+    color:  #f33131;
+    transition: 400ms;
+}
+
+.form_create {
+    flex: 1;
+    width: 940px;
+}
+
+.form_create .itens {
+    margin-top: 30px;
+}
+
+.form_create .itens h3 {
     font-size: 16px;
     font-weight: bold;
     color: #111111;
     margin-bottom: 10px;
 }
 
-.inputs input {
+.form_create input {
     width: 100%;
     height: 49px;
     background: #FFFFFF;
@@ -107,20 +133,22 @@ body header {
     padding: 0 16px ;
     font-size: 18px;
 }
-.inputs button {
+
+.form_create .add_ingredient,
+.form_create .add_prepare {
     font-family: Roboto-Bold;
     font-size: 16px;
     color: #6558C3;
     text-align: right;
     background: none;
-    margin-top: 15px;
+    margin-top: -65px;
 }
 
-.inputs li {
-    margin-bottom: 30px;
+.preparo, .ingredient {
+    margin-bottom: 5px;
 }
 
-.inputs textarea {
+.form_create textarea {
     width: 100%;
     height: 257px;
     border: 1px solid #DDDDDD;
@@ -128,4 +156,55 @@ body header {
     padding: 8px 16px ;
     font-size: 18px;
     resize: vertical;
+}
+
+.banner {
+    width: 100%;
+    height: 240px;
+    margin: 24px 0 50px;
+    border-radius: 15px;
+}
+
+.autor_prato h2{
+    text-align: center;
+    font-size: 36px;
+    color: #111111;
+    font-weight: bold;
+}
+
+.autor_prato h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #777777;
+    margin-bottom: 32px;
+}
+
+
+.card .item h3 {
+    font-size: 24px;
+    color: #111111;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+.card .item ul {
+    margin-bottom: 41px;
+}
+
+.card .item p,
+.card .item li {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.card .item textarea {
+    margin-bottom: 51px;
+    width: 940px;
+    height: 250px;
+    resize: vertical;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
 }
